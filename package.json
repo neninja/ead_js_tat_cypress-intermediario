@@ -1,0 +1,24 @@
+{
+  "name": "ead_js_tat_cypress-intermediario",
+  "version": "1.0.0",
+  "description": "> Projeto referente a [este](https://www.udemy.com/course/testes-automatizados-com-cypress-intermediario/) curso.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nenitf/ead_js_tat_cypress-intermediario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nenitf/ead_js_tat_cypress-intermediario/issues"
+  },
+  "homepage": "https://github.com/nenitf/ead_js_tat_cypress-intermediario#readme",
+  "devDependencies": {
+    "cypress": "^7.3.0"
+  }
+}
