@@ -50,11 +50,16 @@ docker run --publish 80:80 --publish 22:22 --hostname localhost wlsf82/gitlab-ce
 docker run --publish 80:80 --publish 22:22 --hostname localhost wlsf82/gitlab-ce
 ```
 
-- Abrir cypress
+- Executar comando de teste
+    - `npm run cy:open` e escolher arquivo
+    - `npm run cy:test:spec cypress/integration/path/para/arquivo.spec.js`
+    - `npm run cy:test`
 
-```sh
-# usar cypress
-npm run cy:open # interativo
-# ou
-npm run test # headless
-```
+## Anotações do curso
+
+### App Actions
+
+- Comandos criados para executar ações que criam o ambiente para teste. Exemplo: para testar uma issue é necessário possuir um projeto.
+- App Actions que dependem da GUI (simulam usuário):
+    - Tornam os testes mais lentos
+    - Acabam "testando" a GUI mesmo que não seja esse o propósito, tornando os testes que os chamam mais frágeis. Exemplo: caso a interface de criar um projeto mude vai gerar erro no teste de issue. Não que o erro seja incoerente, mas o erro não está na issue! Ao ver todos os testes quebrarem é mais difícil de identificar a causa real do erro e - pela criação de projeto ser uma funcionalidade - existe a possibilidade da frequência de modificações ser alta.
