@@ -42,18 +42,14 @@ docker run --publish 80:80 --publish 22:22 --hostname localhost wlsf82/gitlab-ce
 
 9. Copiar o output do comando `cat $HOME/.ssh/ead_tat_cypress_intermediario.pub`, acessar `http://localhost/profile/keys`, colar em `Key` e clicar em `Add Key`
 
+> Ao encerrar o container será necessário atualizar o access token e a ssh!
+
 ## Execução dos testes
 
-- Iniciar aplicação
-
-```sh
-docker run --publish 80:80 --publish 22:22 --hostname localhost wlsf82/gitlab-ce
-```
-
 - Executar comando de teste
-    - `npm run cy:open` e escolher arquivo
+    - `npm run cy:open` e escolher arquivo ou `Run all tests`
     - `npm run cy:test:spec cypress/integration/path/para/arquivo.spec.js`
-    - `npm run cy:test`
+    - `npm test`
 
 ## Anotações do curso
 

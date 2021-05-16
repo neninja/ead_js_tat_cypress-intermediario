@@ -4,8 +4,8 @@
   "description": "> Projeto referente a [este](https://www.udemy.com/course/testes-automatizados-com-cypress-intermediario/) curso.",
   "main": "index.js",
   "scripts": {
+    "test": "cypress run",
     "cy:open": "cypress open",
-    "cy:test": "cypress run",
     "cy:test:spec": "cypress run --spec"
   },
   "repository": {

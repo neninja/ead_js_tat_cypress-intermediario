@@ -16,7 +16,7 @@ describe('Create Issue', () => {
   })
 
   it('successfully', () => {
-    cy.api_createIssue(issue)
+    cy.gui_createIssue(issue)
 
     cy.get('.issue-details')
       .should('contain', issue.title)
